@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background: #0077b5;
+    /* LinkedIn color */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header .profile-pic {
+    width: 120px;
+    /* Adjust the size as necessary */
+    height: auto;
+    border-radius: 50%;
+}
+
+header .btn {
+    background: #f4f4f4;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    color: #0077b5;
+    /* LinkedIn color */
+    margin-bottom: 10px;
+}
+
+.job {
+    margin-bottom: 20px;
+}
+
+.work-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.work {
+    position: relative;
+    width: calc(33.333% - 20px);
+    cursor: pointer;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.work img {
+    width: 100%;
+    height: 200px;
+    /* Adjust the height as necessary */
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.work:hover .layer {
+    opacity: 1;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    color: #fff;
+    /* Change this to any color you prefer */
+    background-color: #0077b5;
+    /* LinkedIn color */
+    transition: background-color 0.3s, transform 0.3s;
+    /* Smooth transition for hover */
+    text-align: center;
+    /* Center icon within circle */
+}
+
+.social-icon:hover {
+    background-color: #005582;
+    /* Darker shade for hover effect */
+    transform: scale(1.1);
+    /* Scale effect on hover */
+}
+
+.social-icon i {
+    font-size: 24px;
+    /* Adjust the size of the icons */
+}
+
+/* Added styles for the Skills table */
+.skills-table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.skills-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    vertical-align: middle;
+}
+
+.skills-table td i {
+    margin-right: 10px;
+    font-size: 20px;
+    color: #ff9900;
+    /* Example color for AWS and DevOps-related logos */
+}
